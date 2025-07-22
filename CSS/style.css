@@ -2389,8 +2389,10 @@ button {
     .proj-col-card {
         padding: 20px 0;
     }
-    .dropdown-content{
-       min-width: 133px;
+
+    .dropdown-content {
+        min-width: 133px;
+    }
 }
 
 @media(max-width:1303px) {
