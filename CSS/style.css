@@ -581,7 +581,7 @@ section.about {
 }
 
 section.ourteam {
-    padding-top: 90px;
+    padding-top: 100px !important;
 }
 
 .ques-head p {
@@ -602,7 +602,7 @@ section.ourteam {
 }
 
 .ourcoverage {
-    padding: 100px 0;
+   padding-top: 200px;
 }
 
 .ourcoverage .coverage-head {
@@ -935,6 +935,7 @@ section.News {
 /*Projects page*/
 .headd {
     text-align: center;
+    margin: 100px 0;
 }
 
 .headd h1 {
@@ -1201,7 +1202,9 @@ button:hover {
 /*End Of Clients Section */
 /*Sections and Stages pages */
 
-
+section.sec-stages-sec {
+    padding-top: 100px;
+}
 .sec-stages-sec .back-link {
     display: flex;
     align-items: center;
@@ -1298,7 +1301,7 @@ button:hover {
 }
 
 .referances {
-    padding-top: 50px;
+    padding-top: 300px;
     display: flex;
 }
 
@@ -1308,11 +1311,14 @@ button:hover {
 
 .blog-recently {
     padding: 100px 0;
+
 }
 
 .blog-recently .blog-recently-title {
     text-align: center;
+    padding-top: 100px;
 }
+
 
 .blog-recently .blog-recently-title p {
     color: var(--main-color);
@@ -1398,6 +1404,7 @@ section.project-header {
 
 .one-proj-row .proj-result {
     text-align: center;
+    padding-top: 132px;
 }
 
 .one-proj-row li {
@@ -1412,12 +1419,8 @@ section.project-header {
 .one-proj-row p {
     text-align: center;
 }
-
-.other-projects {
-    padding-top: 100px;
-}
-
 .other-projects .other-proj-head {
+     padding-top: 200px !important;
     display: flex;
     justify-content: space-between;
 }
@@ -1489,11 +1492,14 @@ button.mobile-btn {
 /*Home page*/
 .home-hero-sec {
     width: 100%;
-    background-color: #F5F5F5;
+    background-image: url(../assets/images/HERO.png);
+    object-fit: cover;
     padding-top: 19px;
     font-family: "Tajawal";
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
 .home-hero-sec .conten-text {
     display: flex;
     flex-direction: column;
@@ -1529,7 +1535,7 @@ button.mobile-btn {
     vertical-align: middle;
     color: #F2F2F2 !important;
     background: url("../assets/images/btn.svg") no-repeat center center;
-    margin-top: 70px;
+    margin: 70px 0;
     font-weight: bold !important;
     font-size: 16px !important;
 }
@@ -1606,7 +1612,9 @@ button.mobile-btn {
     height: 370px;
     object-fit: cover;
 }
-
+section.home-cont-work {
+    padding-top: 200px;
+}
 .home-services .hserv-head {
     text-align: center;
 }
@@ -2081,7 +2089,16 @@ button {
         transform: translateY(-5px);
     }
 }
+.questionsSec  {
+        margin-top: 200px !important;
+}
+.home-blog .new-bttn{
+    width: 200px ;
+    height: 48px;
+    display: block;
+   margin: 30px auto;
 
+}
 .coverage-stats {
     position: absolute;
     bottom: 20px;
@@ -2562,7 +2579,7 @@ button {
     .home-blog .home-blog-head h2 {
         font-size: 40px;
     }
-
+    
     .ques-head h2 {
         font-size: 35px !important;
     }
