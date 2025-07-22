@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+    <title>مؤسسة الجسر الأخضر للمقاولات</title>
+</head>
+
+<body>
+    <!--nav-->
+     <!--nav-->
+ <nav class="custom-navbar">
+        <div class="custom-container container d-flex justify-content-between align-items-center">
+            <!-- الشعار -->
+            <a class="custom-brand navbar-brand" href="#">
+                <img src="./assets/images/LOGO.svg" alt="logo" />
+            </a>
+
+            <!-- زر فتح القائمة الجانبية (للجوال) -->
+            <button class="btn burger-btn d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z" />
+                </svg>
+            </button>
+            <ul class="nav-links navbar-nav flex-row gap-4">
+                <li class="nav-item"><a class="nav-link " href="./index.html">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link " href="./about.html">من نحن</a></li>
+                <li class="nav-item"><a class="nav-link " href="./services.html">الخدمات</a></li>
+                <li class="nav-item"><a class="nav-link  activepg" href="./projects.html">المشاريع</a></li>
+                <li class="nav-item"><a class="nav-link" href="./clients.html">عملاؤنا</a></li>
+                <li class="nav-item"><a class="nav-link" href="./blog.html">المدونة</a></li>
+                <li class="nav-item"><a class="nav-link contact" href="./contactus.html">تواصل معنا</a></li>
+            </ul>
+            <!-- القائمة الكاملة على الشاشات الكبيرة -->
+            <div class="d-none d-lg-flex align-items-center">
+
+
+                <div class="language-switch d-flex align-items-center ms-4 gap-3">
+                    <div class="lang-options d-flex gap-2">
+                        <a href="#">EN</a>
+                        <a href="#" class="active">عربي</a>
+                    </div>
+                </div>
+                <a href="#contactus" class="btn-contact btn ">تواصل معنا</a>
+            </div>
+        </div>
+ </nav>
+
+    <!-- القائمة الجانبية (Offcanvas Menu) -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <img class="offcanvas-title" src="./assets/images/LOGO.svg" id="mobileMenuLabel" />
+            <button class="close-btn btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav-links navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="./index.html">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">من نحن</a></li>
+                <li class="nav-item"><a class="nav-link" href="./services.html">الخدمات</a></li>
+                <li class="nav-item"><a class="nav-link activepg" href="./projects.html">المشاريع</a></li>
+                <li class="nav-item"><a class="nav-link" href="./clients.html">عملاؤنا</a></li>
+                <li class="nav-item"><a class="nav-link" href="./blog.html">المدونة</a></li>
+                <li class="nav-item"><a class="nav-link contact" href="./contactus.html">تواصل معنا</a></li>
+            </ul>
+            <hr>
+            <div class="language-switch d-flex flex-column gap-2 mt-3">
+                <div class="lang-options d-flex gap-3 justify-content-center">
+                    <a href="#">EN</a>
+                    <a href="#" class="active">عربي</a>
+                </div>
+                <a href="#contactus" class="btn-contact btn btn-outline-primary mt-2">تواصل معنا</a>
+            </div>
+        </div>
+    </div>
+    <!--nav end-->
+    <section class="project-header text-center py-4">
+        <div class="container position-relative">
+            <a href="./projects.html" class="text-dark d-flex align-items-center gap-1 text-decoration-none">
+
+                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0V15L10 7.5L0 0Z" fill="#6D6E71" />
+                </svg>
+                <span>رجوع</span>
+            </a>
+            <!-- أعلى الصفحة -->
+            <div class="d-flex justify-content-center align-items-center  mb-3 proj-add">
+                <h3 class="text-success ">جدة، السعودية</h3>
+
+            </div>
+
+            <!-- العنوان -->
+            <h2 class="fw-bold mb-4">قصر سكني</h2>
+
+            <!-- صورة المشروع -->
+            <div class="project-image mb-4">
+                <img src="./assets/images/Frame 2147223156.png " class="img-fluid w-100  shadow">
+            </div>
+
+            <!-- التفاصيل السفلية -->
+            <div class="d-flex justify-content-between align-items-center w-100 small text-success fw-bold">
+                <div class="">تاريخ الإنشاء: مايو 2025</div>
+                <div class="proj-area">110M2</div>
+                <div class="">مكتمل</div>
+
+
+            </div>
+            <div class="proj-summary">
+                <p>تم تنفيذ هذا المشروع الفاخر في قلب مدينة الرياض، حيث قمنا بتحويل المساحات الخارجية للقصر إلى واحة
+                    خضراء تجمع بين الرقي والراحة. اعتمدنا على تصميمات تنسيق حدائق متكاملة تتناغم مع الطابع المعماري
+                    للقصر، مع التركيز على التفاصيل الدقيقة لضمان أعلى مستوى من الجودة والخصوصية.</p>
+            </div>
+            <div class="row one-proj-row">
+                <div class="col-md-6">
+                    <h4>نطاق العمل</h4>
+                    <ul>
+                        <li>تصميم وتنفيذ المسطحات الخضراء حول القصر.</li>
+                        <li>إنشاء ممرات حجرية مزخرفة تربط بين المداخل والمناطق الحيوية.</li>
+                        <li>تركيب شبكة ري أوتوماتيكية بنظام ذكي للحفاظ على استدامة النباتات.</li>
+                        <li>إنشاء أحواض زراعية مزودة بأنظمة تصريف عزل متقدمة.</li>
+                        <li>زراعة نخيل ونباتات ظلّية وزينة تتناسب مع الأجواء المحلية.</li>
+                        <li>إضاءة خارجية ليلية موزعة بعناية لإبراز معالم التصميم.</li>
+                        <li>تصميم نافورة مائية مركزية تكمّل جمال الواجهة.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>المدة</h4>
+                    <ul>
+                        <li>تم تنفيذ المشروع خلال 45 يومًا، بالتنسيق الكامل مع العميل ومراعاة جدول التنفيذ بدقة.</li>
+                    </ul>
+                </div>
+                <div class="proj-result">
+                    <h4>النتيجة</h4>
+                    <p>قصر محاط بحديقة خلابة تعكس الذوق الرفيع وتوفّر تجربة معيشية متميزة، مع أنظمة ذكية تسهّل الصيانة
+                        وتطيل عمر المساحات الخضراء.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="other-projects py-5">
+
+        <div class="container position-relative">
+            <!-- رأس القسم -->
+            <div class="other-proj-head d-flex flex-column flex-md-row justify-content-between align-items-center mb-4">
+                <div class="title   mb-3 mb-md-0">
+                    <h5 class="text-success">ما نقدمه لعملائنا</h5>
+                    <h3 class="">المزيد من مشاريعنا</h3>
+                </div>
+                <div>
+                    <button class="">رؤية جميع المشاريع</button>
+                </div>
+            </div>
+
+            <!-- كروت المشاريع -->
+            <!-- Swiper Container -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="proj-card">
+                            <img src="./assets/images/Image1.png" alt="">
+                            <div class="proj-card-body">
+                                <h5 class="card-title">قصر سكني</h5>
+                                <div class="end-proj-card">
+                                    <a href="./oneProject.html">
+                                        <p>حى حطين</p>
+                                        <svg width="16" height="24" viewBox="0 0 16 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.5 0.333415L15.5 23.6667L0.499999 12.0001L15.5 0.333415Z"
+                                                fill="#6D6E71" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="proj-card">
+                            <img src="./assets/images/Image1.png" alt="">
+                            <div class="proj-card-body">
+                                <h5 class="card-title">قصر سكني</h5>
+                                <div class="end-proj-card">
+                                    <a href="./oneProject.html">
+                                        <p>حى حطين</p>
+                                        <svg width="16" height="24" viewBox="0 0 16 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.5 0.333415L15.5 23.6667L0.499999 12.0001L15.5 0.333415Z"
+                                                fill="#6D6E71" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="proj-card">
+                            <img src="./assets/images/Image1.png" alt="">
+                            <div class="proj-card-body">
+                                <h5 class="card-title">قصر سكني</h5>
+                                <div class="end-proj-card">
+                                    <a href="./oneProject.html">
+                                        <p>حى حطين</p>
+                                        <svg width="16" height="24" viewBox="0 0 16 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.5 0.333415L15.5 23.6667L0.499999 12.0001L15.5 0.333415Z"
+                                                fill="#6D6E71" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="proj-card">
+                            <img src="./assets/images/Image1.png" alt="">
+                            <div class="proj-card-body">
+                                <h5 class="card-title">قصر سكني</h5>
+                                <div class="end-proj-card">
+                                    <a href="./oneProject.html">
+                                        <p>حى حطين</p>
+                                        <svg width="16" height="24" viewBox="0 0 16 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.5 0.333415L15.5 23.6667L0.499999 12.0001L15.5 0.333415Z"
+                                                fill="#6D6E71" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="proj-card">
+                            <img src="./assets/images/Image1.png" alt="">
+                            <div class="proj-card-body">
+                                <h5 class="card-title">قصر سكني</h5>
+                                <div class="end-proj-card">
+                                    <a href="./oneProject.html">
+                                        <p>حى حطين</p>
+                                        <svg width="16" height="24" viewBox="0 0 16 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.5 0.333415L15.5 23.6667L0.499999 12.0001L15.5 0.333415Z"
+                                                fill="#6D6E71" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="proj-card">
+                            <img src="./assets/images/Image1.png" alt="">
+                            <div class="proj-card-body">
+                                <h5 class="card-title">قصر سكني</h5>
+                                <div class="end-proj-card">
+                                    <a href="./oneProject.html">
+                                        <p>حى حطين</p>
+                                        <svg width="16" height="24" viewBox="0 0 16 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.5 0.333415L15.5 23.6667L0.499999 12.0001L15.5 0.333415Z"
+                                                fill="#6D6E71" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Optional Controls -->
+                <div class="proj-pagination"></div>
+
+                <!-- زر التالي -->
+                <div class="proj-next">
+                    <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.5399e-08 0.333293L-9.53674e-07 23.6666L15 12L9.5399e-08 0.333293Z" fill="#6D6E71" />
+                    </svg>
+
+                </div>
+
+                <!-- زر السابق -->
+                <div class="proj-prev">
+                    <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 0.333293L15 23.6666L-5.24537e-07 12L15 0.333293Z" fill="#6D6E71" />
+                    </svg>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <footer class="text-white " dir="rtl">
+        <div class="container ">
+            <div class="footer-container">
+
+                <!-- العمود الأول: الشعار + مواقع التواصل -->
+                <div class="footer-column footer-logo text-md-end text-center">
+                    <a href="#" class="logo-link"> <img src="./assets/images/Group.svg" alt="شعار الشركة"
+                            class="img-fluid mb-3" style="max-width: 220px;" /></a>
+
+                    <div class="social-icons">
+                        <p class="fw-bold mb-2">مواقع التواصل</p>
+                        <div class="d-flex justify-content-md-end justify-content-center gap-3">
+                            <a href="#" class="text-white fs-5"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" class="text-white fs-5"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white fs-5"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-white fs-5"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white fs-5"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- العمود الثاني: روابط + تواصل معنا -->
+                <div class="footer-column d-flex  gap-5 text-md-end text-center justify-content-md-around">
+                    <!-- روابط تهمك -->
+                    <div class="implinks">
+                        <h5 class="fw-bold mb-4">روابط تهمك</h5>
+                        <ul class="list-unstyled d-flex flex-column mb-0 gap-3">
+                            <li><a href="./index.html" class="text-white text-decoration-none">الرئيسية</a></li>
+                            <li><a href="./about.html" class="text-white text-decoration-none">من نحن</a></li>
+                            <li><a href="./services.html" class="text-white text-decoration-none">الخدمات</a></li>
+                            <li><a href="./projects.html" class="text-white text-decoration-none">المشاريع</a></li>
+                            <li><a href="./clients.html" class="text-white text-decoration-none">عملاؤنا</a></li>
+                            <li><a href="./blog.html" class="text-white text-decoration-none">المدونة</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- تواصل معنا -->
+                    <div class="contacus">
+                        <h5 class="fw-bold mb-4">تواصل معنا</h5>
+                        <ul class="list-unstyled d-flex flex-column mb-0 gap-3">
+                            <li><a href="./index.html" class="text-white text-decoration-none"> <i
+                                        class="fas fa-map-marker-alt ms-2"></i> الرياض - المملكة العربية السعودية</a>
+                            </li>
+                            <li><a href="./about.html" class="text-white text-decoration-none"> <i
+                                        class="fas fa-envelope ms-2"></i> info@gbcest.com </a></li>
+                            <li><a href="./services.html" class="text-white text-decoration-none"><i
+                                        class="fas fa-phone ms-2"></i> +966 50 360 2660</a></li>
+                            <li><a href="./projects.html" class="text-white text-decoration-none"><i
+                                        class="fas fa-phone ms-2"></i> +966 50 1944 522</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- الأسفل -->
+            <div
+                class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 text-white-50 small">
+                <p class="mb-2 mb-md-0">جميع الحقوق محفوظة لـ <span class="text-success">مؤسسة الجسر الأخضر
+                        للمقاولات</span></p>
+                <div class="d-flex align-items-center gap-2">
+                    <span>صنع بكل حب من قبل</span>
+                    <a href=""><img src="./assets/images/Frame.png" alt="pujux logo" style="height: 25px;" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- WhatsApp Button -->
+    <a href="https://api.whatsapp.com/send?phone=966555555555&text=مرحبا%20بمؤسسة%20الجسر%20الأخضر%20للمقاولات"
+        class="whats-button" target="_blank" rel="noopener noreferrer">
+        <svg class="whats-icon" width="60" height="60" viewBox="0 0 60 60" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M16.4142 46.0546L18.0548 38.4374C15.9461 35.1115 15.1235 31.1304 15.7413 27.241C16.3591 23.3517 18.3749 19.8214 21.4104 17.3126C24.4459 14.8038 28.2926 13.4888 32.2287 13.6144C36.1648 13.74 39.9198 15.2976 42.7892 17.9948C45.6586 20.692 47.4452 24.3436 47.8138 28.2644C48.1824 32.1852 47.1077 36.1058 44.7912 39.2906C42.4748 42.4753 39.0759 44.7054 35.2321 45.5624C31.3884 46.4194 27.3641 45.8444 23.9142 43.9453L16.4142 46.0546Z"
+                fill="#2AA626" stroke="white" stroke-width="2" />
+            <path
+                d="M36.3613 32.4009C36.0625 32.1988 35.7636 32.0978 35.4648 32.5019L34.2694 34.1186C33.9706 34.3207 33.7714 34.4217 33.3729 34.2196C31.8788 33.4113 29.7869 32.5019 27.9939 29.4707C27.8943 29.0665 28.0935 28.8644 28.2927 28.6624L29.1892 27.2478C29.3884 27.0457 29.2888 26.8436 29.1892 26.6415L27.9939 23.7113C27.695 22.903 27.3962 23.004 27.0974 23.004H26.3005C26.1012 23.004 25.7028 23.1051 25.3043 23.5092C23.1129 25.7322 24.0094 28.8644 25.6032 30.8853C25.902 31.2894 27.8943 34.9269 32.1776 36.8467C35.3652 38.2613 36.0625 38.0592 36.959 37.8571C38.0547 37.7561 39.1504 36.8467 39.6485 35.9373C39.7481 35.6342 40.2462 34.3207 39.8477 34.1186"
+                fill="white" />
+        </svg>
+    </a>
+    <!-- End of  WhatsApp Button -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>

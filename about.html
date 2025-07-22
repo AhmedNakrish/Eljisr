@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <title>مؤسسة الجسر الأخضر للمقاولات</title>
+</head>
+
+<body>
+  <!--nav-->
+   
+    <nav class="custom-navbar">
+        <div class="custom-container container d-flex justify-content-between align-items-center">
+            <!-- الشعار -->
+            <a class="custom-brand navbar-brand" href="#">
+                <img src="./assets/images/LOGO.svg" alt="logo" />
+            </a>
+
+            <!-- زر فتح القائمة الجانبية (للجوال) -->
+            <button class="btn burger-btn d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z" />
+                </svg>
+            </button>
+            <ul class="nav-links navbar-nav flex-row gap-4">
+                <li class="nav-item"><a class="nav-link " href="./index.html">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link activepg" href="./about.html">من نحن</a></li>
+                <li class="nav-item"><a class="nav-link" href="./services.html">الخدمات</a></li>
+                <li class="nav-item"><a class="nav-link  " href="./projects.html">المشاريع</a></li>
+                <li class="nav-item"><a class="nav-link" href="./clients.html">عملاؤنا</a></li>
+                <li class="nav-item"><a class="nav-link" href="./blog.html">المدونة</a></li>
+                <li class="nav-item"><a class="nav-link contact" href="./contactus.html">تواصل معنا</a></li>
+            </ul>
+            <!-- القائمة الكاملة على الشاشات الكبيرة -->
+            <div class="d-none d-lg-flex align-items-center">
+
+
+                <div class="language-switch d-flex align-items-center ms-4 gap-3">
+                    <div class="lang-options d-flex gap-2">
+                        <a href="#">EN</a>
+                        <a href="#" class="active">عربي</a>
+                    </div>
+                </div>
+                <a href="#contactus" class="btn-contact btn ">تواصل معنا</a>
+            </div>
+        </div>
+    </nav>
+
+
+  <!-- القائمة الجانبية (Offcanvas Menu) -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <img class="offcanvas-title" src="./assets/images/LOGO.svg" id="mobileMenuLabel" />
+      <button class="close-btn btn" data-bs-dismiss="offcanvas" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav-links navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="./index.html">الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link activepg" href="./about.html">من نحن</a></li>
+        <li class="nav-item"><a class="nav-link" href="./services.html">الخدمات</a></li>
+        <li class="nav-item"><a class="nav-link " href="./projects.html">المشاريع</a></li>
+        <li class="nav-item"><a class="nav-link" href="./clients.html">عملاؤنا</a></li>
+        <li class="nav-item"><a class="nav-link" href="./blog.html">المدونة</a></li>
+        <li class="nav-item"><a class="nav-link contact" href="./contactus.html">تواصل معنا</a></li>
+      </ul>
+      <hr>
+      <div class="language-switch d-flex flex-column gap-2 mt-3">
+        <div class="lang-options d-flex gap-3 justify-content-center">
+          <a href="#">EN</a>
+          <a href="#" class="active">عربي</a>
+        </div>
+        <a href="#contactus" class="btn-contact btn btn-outline-primary mt-2">تواصل معنا</a>
+      </div>
+    </div>
+  </div>
+  <!--nav end-->
+  <section class="about">
+    <div class="container">
+      <div class="about-header headd align-items-center">
+        <div class="text-center  mb-3 mb-md-0">
+          <img src="./assets/images/Vector.svg" alt="" class="img-fluid mb-3" />
+          <h1>من نحن</h1>
+          <h4 class="pb-2">نبذة عنا</h4>
+          <p class="aboutinfo pb-5">
+            أسست مؤسّسة الجسر الأخضر في عام 2022 م ومقرّها في الرّياض، المملكة العربية السعوديّة على أيدي إخوة مهندسين
+            سعوديين، بفضل الله سبحانه وتعالى ثم بفضل خبرتنا التي اكتسبناها
+            على مدار السنين الماضية، وبفضل انتقائنا لفريق عمل ذا خبرة، استطعنا أن ننجز جميع مشاريعنا بمختلف
+            أحجامها بنجاح. حيث أصبحنا بارزين في مجالات المسطّحات الخضراء وتنسيق الحدائق، والأعمال المعماريّة
+            ، وأعمال الهندسة المدنيّة. في الجسر الأخضر نوفّر لكم أعمال التصميم والتنفيذ والصّيانة للمسطّحات الخضراء و
+            تنسيقها بما في ذلك تصميم وتنفيذ وصيانة شبكات الرّي. كما نوفّر لكم كل ما يتعلّق بالأعمال المعمارية الداخلية
+            والخارجيّة.
+          </p>
+        </div>
+        <div class="text-center">
+          <img src="./assets/images/Image Container.png" class="img-fluid aboutheadimg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visionandmission">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="vision text-center ">
+            <img src="./assets/images/vision-svgrepo-com 1.png" alt="" class="img-fluid mb-3 ">
+            <p class="visionaddress text-center">رؤيتنا</p>
+            <p class="visioninfo text-center">
+              أن تكون مؤسسة الجسر الأخضر للمقاولات من المؤسسات الرائدة على مستوى المملكة والخليج في قطاع المقاولات
+              العامة،
+              واللاند سكيب، والتصميم الداخلي والخارجي، وذلك بتطبيق جميع المواصفات والمعايير
+              المعتمدة في تلك المجالات؛ مما يسهم في تنمية وازدهار صناعة المقاولات في المملكة العربية السعودية، وتعزيزًا
+              لرؤية المملكة 2030 وتماشيًا مع النمو العمراني المتسارع في المملكة، من خلال تقديم حلول مبتكرة وخدمات فريدة
+              مع التزامنا بمبدأ النزاهة والشفافية مع العملاء، وبناء جسور من الثقة بيننا وبينا عملائنا من الأفراد أو
+              الشركات
+
+
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mission text-center ">
+            <img src="./assets/images/Component 156.png" alt="" class="img-fluid mb-3">
+            <p class="missionaddress text-center">مهمتنا</p>
+            <p class="missioninfo text-center">
+              الوصول إلى مركز ريادي في كافة مجالات عملنا،
+              وذلك من خلال نخبة من القوى العاملة المتخصصة وكادر هندسي من ذوي الخبرة العالية، لتنفيذ أي مشروع بشكل
+              احترافي وبمعايير عالمية
+              ، نواكب فيها الرؤية السعودية ونحقق فيها تطلعات العملاء مع الاهتمام بجودة أعمالنا.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ourwork py-4">
+    <div class="container">
+      <div class="row workvalues text-center">
+        <div class="col-md-4 col-sm-6 mb-3 values">
+          <span>1.000.000+</span>
+          <p>زرعنا أكثر من مليون زهرة</p>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-3 values">
+          <span>1.000+</span>
+          <p>أكملنا أكثر من ألف شجرة</p>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-3 values">
+          <span>90+</span>
+          <p>لدينا أكثر من تسعين عميل سعيد</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ourteam py-5">
+    <div class="container">
+      <div class="team-head ">
+        <p>الخبرة، الشغف، الالتزام</p>
+        <h2>فريقنا</h2>
+      </div>
+      <div class="row position-relative z-1 text-center">
+        <div class="col-md-4 team-member ">
+          <div class="imgcard">
+            <img src="./assets/images/image (1).jpg" alt="عبدالرحمن" class="img-fluid  ">
+            <p>المدير التنفيذي</p>
+          </div>
+          <h3>عبدالرحمن</h3>
+        </div>
+        <div class="col-md-4 team-member ">
+          <div class="imgcard">
+            <img src="./assets/images/image (3).jpg" alt="بن أرشيده" class="img-fluid  ">
+            <p>المدير التنفيذي</p>
+          </div>
+          <h3>بن أرشيده</h3>
+        </div>
+        <div class="col-md-4 team-member ">
+          <div class="imgcard">
+            <img src="./assets/images/image (2).jpg" alt="علي الرويلي" class="img-fluid  ">
+            <p>المدير التنفيذي</p>
+          </div>
+          <h3>علي الرويلي</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="questionsSec py-5">
+    <div class="container">
+      <div class="ques-head  mb-4">
+        <p>نوفر عليك عناء السؤال</p>
+        <h2>الأسئلة الشائعة</h2>
+      </div>
+
+      <div class="accordion" id="faqAccordion">
+        <!-- سؤال 1 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <p>ما هي الخدمات التي تقدمها مؤسسة الجسر الأخضر؟</p>
+            <span class="accordion-icon">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon-path"
+                  d="M25 13.4084H13.525V25H11.4483V13.4084H0V11.5404H11.4483V0H13.525V11.5404H25V13.4084Z"
+                  fill="#6D6E71" />
+              </svg>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <p>نحن نقدم خدمات التصميم، التنفيذ، التشجير، والعناية المستمرة بالمساحات الخضراء.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <p>هل تقدمون ضمانًا على الأعمال المنفذة؟</p>
+            <span class="accordion-icon">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon-path"
+                  d="M25 13.4084H13.525V25H11.4483V13.4084H0V11.5404H11.4483V0H13.525V11.5404H25V13.4084Z"
+                  fill="#6D6E71" />
+              </svg>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <p>نعم، نقدم ضمانًا على جودة التنفيذ لفترة محددة حسب نوع المشروع.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <p>هل تتوفر لديكم باقات أو أسعار ثابتة؟</p>
+            <span class="accordion-icon">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon-path"
+                  d="M25 13.4084H13.525V25H11.4483V13.4084H0V11.5404H11.4483V0H13.525V11.5404H25V13.4084Z"
+                  fill="#6D6E71" />
+              </svg>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <p>نعم، لدينا باقات مناسبة لمختلف الاحتياجات مع أسعار تنافسية.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <p>هل توفرون خدمات التصميم فقط دون التنفيذ؟</p>
+            <span class="accordion-icon">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon-path"
+                  d="M25 13.4084H13.525V25H11.4483V13.4084H0V11.5404H11.4483V0H13.525V11.5404H25V13.4084Z"
+                  fill="#6D6E71" />
+              </svg>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <p>نعم، يمكننا تقديم خدمات التصميم فقط حسب رغبة العميل.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="serv   text-center">
+    <div class="container">
+      <div class="content">
+        <h2>نمو عمراني يليق برؤية 2030، ننفذه بخبرة محلية.</h2>
+        <p>من التنسيق الحضري إلى تنفيذ المشاريع السكنية نضمن الجودة الإنشائية، والحلول المستدامة في كل خطوة.</p>
+        <button class="start-tbn btn  mt-3">ابدأ مشروعك الآن</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="ourcoverage py-5">
+    <div class=" text-center">
+      <div class="coverage-head mb-4">
+        <h2>تغطيتنــــا</h2>
+        <p>خدماتنا تغطي جميع أنحاء المملكة العربية السعودية</p>
+      </div>
+      <div class="coverage-img">
+        <!-- العلامات المتحركة على الصورة -->
+        <div class="marker marker-riyadh">
+          <div class="marker-tooltip">الرياض</div>
+        </div>
+        <!--div class="marker marker-jeddah">
+                <div class="marker-tooltip">جدة</div>
+            </!--div>
+            <div class="marker marker-dammam">
+                <div class="marker-tooltip">الدمام</div>
+            </div>
+            <div class="marker marker-mecca">
+                <div class="marker-tooltip">مكة المكرمة</div>
+            </div>
+            <div-- class="marker marker-medina">
+                <div class="marker-tooltip">المدينة المنورة</div>
+            </div-->
+
+        <!-- صورة الخريطة -->
+        <img src="./assets/images/Container.png" alt="Coverage Map">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="text-white " dir="rtl">
+    <div class="container ">
+      <div class="footer-container">
+
+        <!-- العمود الأول: الشعار + مواقع التواصل -->
+        <div class="footer-column footer-logo text-md-end text-center">
+          <a href="#" class="logo-link"> <img src="./assets/images/Group.svg" alt="شعار الشركة" class="img-fluid mb-3"
+              style="max-width: 220px;" /></a>
+
+          <div class="social-icons">
+            <p class="fw-bold mb-2">مواقع التواصل</p>
+            <div class="d-flex justify-content-md-end justify-content-center gap-3">
+              <a href="#" class="text-white fs-5"><i class="fab fa-facebook-square"></i></a>
+              <a href="#" class="text-white fs-5"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white fs-5"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="text-white fs-5"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white fs-5"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- العمود الثاني: روابط + تواصل معنا -->
+        <div
+          class="footer-column d-flex  gap-5 text-md-end text-center justify-content-md-around">
+          <!-- روابط تهمك -->
+          <div class="implinks">
+            <h5 class="fw-bold mb-4">روابط تهمك</h5>
+            <ul class="list-unstyled d-flex flex-column mb-0 gap-3">
+              <li><a href="./index.html" class="text-white text-decoration-none">الرئيسية</a></li>
+              <li><a href="./about.html" class="text-white text-decoration-none">من نحن</a></li>
+              <li><a href="./services.html" class="text-white text-decoration-none">الخدمات</a></li>
+              <li><a href="./projects.html" class="text-white text-decoration-none">المشاريع</a></li>
+              <li><a href="./clients.html" class="text-white text-decoration-none">عملاؤنا</a></li>
+              <li><a href="./blog.html" class="text-white text-decoration-none">المدونة</a></li>
+            </ul>
+          </div>
+
+          <!-- تواصل معنا -->
+          <div class="contacus">
+            <h5 class="fw-bold mb-4">تواصل معنا</h5>
+            <ul class="list-unstyled d-flex flex-column mb-0 gap-3">
+              <li><a href="./index.html" class="text-white text-decoration-none"> <i
+                    class="fas fa-map-marker-alt ms-2"></i> الرياض - المملكة العربية السعودية</a></li>
+              <li><a href="./about.html" class="text-white text-decoration-none"> <i class="fas fa-envelope ms-2"></i>
+                  info@gbcest.com </a></li>
+              <li><a href="./services.html" class="text-white text-decoration-none"><i class="fas fa-phone ms-2"></i>
+                  +966 50 360 2660</a></li>
+              <li><a href="./projects.html" class="text-white text-decoration-none"><i class="fas fa-phone ms-2"></i>
+                  +966 50 1944 522</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- الأسفل -->
+      <div
+        class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 text-white-50 small">
+        <p class="mb-2 mb-md-0">جميع الحقوق محفوظة لـ <span class="text-success">مؤسسة الجسر الأخضر للمقاولات</span></p>
+        <div class="d-flex align-items-center gap-2">
+          <span>صنع بكل حب من قبل</span>
+          <a href=""><img src="./assets/images/Frame.png" alt="pujux logo" style="height: 25px;" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--End of Footer-->
+
+
+  <!-- WhatsApp Button -->
+  <a href="https://api.whatsapp.com/send?phone=966555555555&text=مرحبا%20بمؤسسة%20الجسر%20الأخضر%20للمقاولات"
+    class="whats-button" target="_blank" rel="noopener noreferrer">
+    <svg class="whats-icon" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M16.4142 46.0546L18.0548 38.4374C15.9461 35.1115 15.1235 31.1304 15.7413 27.241C16.3591 23.3517 18.3749 19.8214 21.4104 17.3126C24.4459 14.8038 28.2926 13.4888 32.2287 13.6144C36.1648 13.74 39.9198 15.2976 42.7892 17.9948C45.6586 20.692 47.4452 24.3436 47.8138 28.2644C48.1824 32.1852 47.1077 36.1058 44.7912 39.2906C42.4748 42.4753 39.0759 44.7054 35.2321 45.5624C31.3884 46.4194 27.3641 45.8444 23.9142 43.9453L16.4142 46.0546Z"
+        fill="#2AA626" stroke="white" stroke-width="2" />
+      <path
+        d="M36.3613 32.4009C36.0625 32.1988 35.7636 32.0978 35.4648 32.5019L34.2694 34.1186C33.9706 34.3207 33.7714 34.4217 33.3729 34.2196C31.8788 33.4113 29.7869 32.5019 27.9939 29.4707C27.8943 29.0665 28.0935 28.8644 28.2927 28.6624L29.1892 27.2478C29.3884 27.0457 29.2888 26.8436 29.1892 26.6415L27.9939 23.7113C27.695 22.903 27.3962 23.004 27.0974 23.004H26.3005C26.1012 23.004 25.7028 23.1051 25.3043 23.5092C23.1129 25.7322 24.0094 28.8644 25.6032 30.8853C25.902 31.2894 27.8943 34.9269 32.1776 36.8467C35.3652 38.2613 36.0625 38.0592 36.959 37.8571C38.0547 37.7561 39.1504 36.8467 39.6485 35.9373C39.7481 35.6342 40.2462 34.3207 39.8477 34.1186"
+        fill="white" />
+    </svg>
+  </a>
+  <!--  WhatsApp Button -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script>
+    const items = document.querySelectorAll('.accordion-item');
+
+    items.forEach(item => {
+      const header = item.querySelector('.accordion-header');
+      const iconPath = item.querySelector('.icon-path');
+
+      const plusPath = "M25 13.4084H13.525V25H11.4483V13.4084H0V11.5404H11.4483V0H13.525V11.5404H25V13.4084Z";
+      const minusPath = "M0 11.5404H25V13.4084H0V11.5404Z";
+
+      header.addEventListener('click', () => {
+        item.classList.toggle('active');
+        const isOpen = item.classList.contains('active');
+        iconPath.setAttribute('d', isOpen ? minusPath : plusPath);
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>

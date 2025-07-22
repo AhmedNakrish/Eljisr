@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <title>مؤسسة الجسر الأخضر للمقاولات</title>
+</head>
+
+<body>
+  <!--nav-->
+    <nav class="custom-navbar">
+        <div class="custom-container container d-flex justify-content-between align-items-center">
+            <!-- الشعار -->
+            <a class="custom-brand navbar-brand" href="#">
+                <img src="./assets/images/LOGO.svg" alt="logo" />
+            </a>
+
+            <!-- زر فتح القائمة الجانبية (للجوال) -->
+            <button class="btn burger-btn d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z" />
+                </svg>
+            </button>
+            <ul class="nav-links navbar-nav flex-row gap-4">
+                <li class="nav-item"><a class="nav-link " href="./index.html">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">من نحن</a></li>
+                <li class="nav-item"><a class="nav-link" href="./services.html">الخدمات</a></li>
+                <li class="nav-item"><a class="nav-link  " href="./projects.html">المشاريع</a></li>
+                <li class="nav-item"><a class="nav-link" href="./clients.html">عملاؤنا</a></li>
+                <li class="nav-item"><a class="nav-link activepg" href="./blog.html">المدونة</a></li>
+                <li class="nav-item"><a class="nav-link contact" href="./contactus.html">تواصل معنا</a></li>
+            </ul>
+            <!-- القائمة الكاملة على الشاشات الكبيرة -->
+            <div class="d-none d-lg-flex align-items-center">
+
+
+                <div class="language-switch d-flex align-items-center ms-4 gap-3">
+                    <div class="lang-options d-flex gap-2">
+                        <a href="#">EN</a>
+                        <a href="#" class="active">عربي</a>
+                    </div>
+                </div>
+                <a href="#contactus" class="btn-contact btn ">تواصل معنا</a>
+            </div>
+        </div>
+    </nav>
+
+
+  <!-- القائمة الجانبية (Offcanvas Menu) -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <img class="offcanvas-title" src="./assets/images/LOGO.svg" id="mobileMenuLabel" />
+      <button class="close-btn btn" data-bs-dismiss="offcanvas" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav-links navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="./index.html">الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html">من نحن</a></li>
+        <li class="nav-item"><a class="nav-link" href="./services.html">الخدمات</a></li>
+        <li class="nav-item"><a class="nav-link " href="./projects.html">المشاريع</a></li>
+        <li class="nav-item"><a class="nav-link" href="./clients.html">عملاؤنا</a></li>
+        <li class="nav-item"><a class="nav-link activepg" href="./blog.html">المدونة</a></li>
+        <li class="nav-item"><a class="nav-link contact" href="./contactus.html">تواصل معنا</a></li>
+      </ul>
+      <hr>
+      <div class="language-switch d-flex flex-column gap-2 mt-3">
+        <div class="lang-options d-flex gap-3 justify-content-center">
+          <a href="#">EN</a>
+          <a href="#" class="active">عربي</a>
+        </div>
+        <a href="#contactus" class="btn-contact btn btn-outline-primary mt-2">تواصل معنا</a>
+      </div>
+    </div>
+  </div>
+  <!--nav end-->
+  <section class="sec-stages-sec">
+    <div class="container">
+      <div class="row">
+        <!-- رجوع -->
+        <div class="col-md-3 back">
+          <a href="./blog.html" class="back-link d-flex align-items-center gap-2">
+            <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0V15L10 7.5L0 0Z" fill="#6D6E71" />
+            </svg>
+            <p class="m-0">رجوع</p>
+          </a>
+        </div>
+
+        <!-- المحتوى -->
+        <div class="col-md-9">
+          <div class="title">
+            <h3>أقسام ومراحل التشطيب وطرق تنفيذ التشطيبات الصحيحة</h3>
+          </div>
+
+          <div class="eng-sec">
+            <!-- اسم المهندس -->
+            <div class="eng-info d-flex align-items-center gap-2 mb-2">
+              <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.5 1.625C11.0878 1.625 12.375 2.91219 12.375 4.5C12.375 6.08781 11.0878 7.375 9.5 7.375C7.91219 7.375 6.625 6.08781 6.625 4.5C6.625 2.91219 7.91219 1.625 9.5 1.625Z"
+                  stroke="#4D4D4D" />
+                <path
+                  d="M6.125 10.625H12.875C14.4629 10.625 15.75 11.9121 15.75 13.5V16.375H3.25V13.5C3.25 11.9121 4.53718 10.625 6.125 10.625Z"
+                  stroke="#4D4D4D" />
+              </svg>
+              <p class="m-0">م. عبدالرحمن الرويلي</p>
+            </div>
+
+            <!-- القسم -->
+            <div class="eng-info d-flex align-items-center gap-2">
+              <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.375 16.875H1.625V15.4425L2.345 14.01H16.6625L17.375 15.4425V16.875Z" stroke="#4D4D4D"
+                  stroke-miterlimit="10" />
+                <path
+                  d="M9.31289 3.98999H9.68039C11.5303 3.98999 13.3044 4.72485 14.6125 6.03292C15.9205 7.34099 16.6554 9.1151 16.6554 10.965V11.1525H2.33789V10.965C2.33789 9.1151 3.07275 7.34099 4.38082 6.03292C5.68889 4.72485 7.46301 3.98999 9.31289 3.98999Z"
+                  stroke="#4D4D4D" stroke-miterlimit="10" />
+                <path d="M9.5 1.125V3.99" stroke="#4D4D4D" stroke-miterlimit="10" />
+                <path d="M7.35547 1.125H11.6455" stroke="#4D4D4D" stroke-miterlimit="10" />
+                <path d="M14.5102 11.145H4.49023V14.01H14.5102V11.145Z" stroke="#4D4D4D" stroke-miterlimit="10" />
+              </svg>
+              <p class="m-0">قسم الهندسة المدنية والمعمارية</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="eng-sec-img">
+        <img src="./assets/images/Image Container.png" alt="">
+      </div>
+    </div>
+    <div class="container  intro-para">
+      <p>مرحلة التشطيبات هي المرحلة التي تبلغ فيها جماليّة المبنى وفنّياته ذروتها في عمليّة البناء. ويعتبرها أصحاب
+        المنازل
+        أنها المرحلة
+        النهائية في البناء التي تكون جودة التنفيذ وجودة المواد فيها محسوسة لدى مستخدمي المبنى. لذلك هي المرحلة التي قد
+        تكون مكلفة
+        أحياناً لأصحاب المنازل حسب اختيارهم لتصميم الديكور الداخلي والخارجي.
+      </p>
+    </div>
+  </section>
+  <section class="finishing-section text-end container">
+    <h3>تنقسم مراحل التشطيب إلى قسمين رئيسيين:</h3>
+    <ol type="1">
+      <li>
+        <strong>التشطيب الداخلي:</strong>
+        وهي المرحلة التي يتم فيها إضافة وتنفيذ وتأسيس كل الأعمال داخل المبنى مثل تأسيس شبكات المواسير وأعمال الكهرباء،
+        وأعمال اللياسة، وتركيب الأبواب والشبابيك.
+      </li>
+      <li>
+        <strong>التشطيب الخارجي:</strong>
+        وهي كل ما يتم تنفيذه من أعمال على واجهة المبنى الخارجية سواء كانت واجهات الحجر أو الألمنيوم أو الدهان.
+      </li>
+    </ol>
+    <p>
+      مراحل تنفيذ أعمال التشطيبات ينبغي أن تتم بالترتيب مع الأخذ بالاعتبار أنه يجب الالتزام بالمخططات التنفيذية التي تخص
+      كل مرحلة من مراحل التشطيب؛ مثل مخططات الميكانيكا والمخططات الكهربائية والمخطط المعماري والتصميم الداخلي، وأعمال
+      الكهرباء، وأعمال اللياسة، وتركيب الأبواب والشبابيك.
+    </p>
+  </section>
+  <div class="container">
+    <div class="row align-items-start">
+      <!-- المحتوى النصي -->
+      <div class="col-md-6">
+        <h4 class="stages-title">تنقسم مراحل التشطيب إلى قسمين رئيسيين:</h4>
+        <ol class="stages-list" type="1">
+          <li>
+            <strong>التجهيز وتحديد مستوى ومنسوب التشطيب:</strong><br>
+            - يتم تجهيز المنزل عن طريق تنظيفه بالكامل من مخلفات البناء.<br>
+            - البدء في تركيب أبواب الغرف (لو باب مؤقت) وفتح أماكن المواد والخامات.
+          </li>
+          <li>
+            من الضروري التنسيق مع المقاولين في هذه المرحلة، حيث يتم تحديد ارتفاعات الجدران وفتحات الأبواب.
+          </li>
+          <li>
+            <strong>مرحلة تأسيس تمديدات الكهرباء والصحي:</strong><br>
+            - يتم التعاقد مع شركة ديكورات المطابخ والحمامات، ثم تحديد سمك قطع البلاط والمواد.<br>
+            - ثم يتم التنسيق مع مقاول الصحي لتكسير تمديدات التغذية والصرف، ومع شركة الكهرباء للتأسيس.<br>
+            - تقوم شركة التكييف بتحديد المسارات، ثم شركة الدش والسنترال والكاميرات، وبعد ذلك يتم إغلاق التكسير.
+          </li>
+          <li>
+            <strong>اللياسة:</strong><br>
+            تبدأ اللياسة عن طريق تركيب الشبك أو السلك على الفواصل المعمارية التي تكون بين الأعمدة أو الكمرات وبين
+            البلوك.
+            كما يتم تركيب الشبك على أماكن تكسير السباكة والكهرباء. بعد ذلك يتم غمر الجدران بالماء ليبدأ إتمام الطرطشة
+            الأولى ويتم تركها
+            ليوم أو أكثر لتجف مع مراعاة اختباراها قبل الاستلام.
+
+          </li>
+          <li>
+            <strong>أعمال الجبسمبورد:</strong><br>
+            في هذه المرحلة يتم الاتفاق مع مقاول الكهرباء لوضع الفتحات والتمديدات الخاصة بالإضاءة وشد الأسلاك.
+            أيضاً شركة التكييف تقوم برماجعة التقفيل على الدكت وفتحات تدفّق الهواء وفتحات سحب الهواء أو الصيانة للتكييف
+            المخفي إن
+            وجد.
+
+          </li>
+          <li>
+            <strong>الدهانات:</strong><br>
+            عمال الدهانات تبدأ بصنفرة الجدران ليأتي بعدها التأسيس بالبرايمر أو السيلر ويترك يوم كامل ليجف. تأتي الخطوة
+            التالية لتكون المعجنة وهي تعتمد في كمّيتها على جودة اللياسة فكلما كانت جودتها جيدة كلما قلّت كمية المعجون
+            وبالعكس صحيح.
+            بعد ذلك يتم إنهاء تأسيس الدهانات.
+
+          </li>
+          <li>
+            <strong>الأرضيات:</strong><br>
+            في هذه المرحلة يتم التأكد من نظافة الأرضيات وخلوّها من أي شوائب ليتم تركيب الأرضيات بأنواعها المختلفة سواء
+            كانت بلاط أو
+            رخام أو خشب أو فينيل حسب تفضيل المالك.
+
+          </li>
+          <li>
+            <strong>التشطيب النهائي:</strong><br>
+            في هذه المرحلة يتم تركيب الخزائن والمطبخ كما يتم توريد وتركيب الأبواب والنوافذ وتركيب المقابض والاكسسوارات
+            المتعلقة بها
+            والانتهاء من تشطيبات النجارة. بعد ذلك يتم إنهاء الدهانات عن طريق دهان الوجه الخير بعد تركيب الأبواب
+            والنوافذ. يلي ذلك
+            تشطيب الكهرباء وتركيب المصابيح والمفاتيح واللوحة العمومية وتركيب ديكورات الأسقف والجدران والثريّات والإضاءات
+            الجدارية والأرضية. يقوم بعد ذلك مقاول الصحي بإنهاء السباكة عن طريق تركيب أجهزة الحمامات كاملة، تأتي هذه
+            المرحلة
+            متأخرة لضمان نظافة تلك الأجهزة وعدم استخدامها. في الخطوة الأخيرة تبدأ مرحلة التنظيف عن طريق الاستعانة بشركة
+            تنظيف
+            متخصصة تقوم بتنظيف وتعقيم المبنى كاملاً ليتم بعد ذلك وضع الأثاث والمفروشات.
+
+          </li>
+        </ol>
+      </div>
+      <!-- الصورة -->
+      <div class="col-md-6 finish-img">
+        <img src="./assets/images/clothes.png" alt="صورة التشطيب">
+      </div>
+    </div>
+    <div class="finish-end-p">
+      <p>كانت هذه خطوات ومراحل التشطيب كاملة قمنا من خلالها باستعراض كل ما يهم صاحب المبنى مع العلم أن تلك المراحل
+        والخطوات ليست بالضرورة أن تتم بشكل متتالي بل يمكن أن تتم تلك المراحل بترتيب مختلف مع مراعاة ان يقوم المقاول
+        المسؤول
+        باتخاذ الإجراءات والاحتياطات اللازمة عند تنفيذ مراحل التشطيب بترتيب مختلف.
+      </p>
+    </div>
+    <div class="referances">
+      <p class="ref-title">المراجع :</p>
+      <p class="ref">/https://www.albyit.com/finishing-buildings-in-7-steps</p>
+    </div>
+  </div>
+  </div>
+  <section class="blog-recently">
+    <div class="container">
+      <div class="blog-recently-title">
+        <p>بعض من أخبارنا</p>
+        <h3>المدونة مؤخرا</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-4 blog-col-card">
+          <div class="card">
+            <img src="./assets/images/Image Container (1).png" alt="">
+            <div class="card-body">
+              <p class="card-date">1 مايو 2025</p>
+              <h3 class="card-title">إضافة ميزة "طلب خدمة" أصبحت متاحة الآن</h3>
+              <p>يمكن للعملاء الآن نشر طلباتهم مباشرة من ملفهم الشخصي لتلقّي عروض من وكالات متخصصة خلال دقائق.</p>
+              <div class="end-card">
+                <a href="/single-blog.html">
+                  <h5>رؤية المزيد</h5>
+                  <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 18L12 -5.24537e-07L3.93402e-07 9L12 18Z" fill="#8C8084" />
+                  </svg>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 blog-col-card">
+          <div class="card">
+            <img src="./assets/images/Image Container (1).png" alt="">
+            <div class="card-body">
+              <p class="card-date">1 مايو 2025</p>
+              <h3 class="card-title">إضافة ميزة "طلب خدمة" أصبحت متاحة الآن</h3>
+              <p>يمكن للعملاء الآن نشر طلباتهم مباشرة من ملفهم الشخصي لتلقّي عروض من وكالات متخصصة خلال دقائق.</p>
+              <div class="end-card">
+                <a href="/single-blog.html">
+                  <h5>رؤية المزيد</h5>
+                  <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 18L12 -5.24537e-07L3.93402e-07 9L12 18Z" fill="#8C8084" />
+                  </svg>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 blog-col-card">
+          <div class="card">
+            <img src="./assets/images/Image Container (1).png" alt="">
+            <div class="card-body">
+              <p class="card-date">1 مايو 2025</p>
+              <h3 class="card-title">إضافة ميزة "طلب خدمة" أصبحت متاحة الآن</h3>
+              <p>يمكن للعملاء الآن نشر طلباتهم مباشرة من ملفهم الشخصي لتلقّي عروض من وكالات متخصصة خلال دقائق.</p>
+              <div class="end-card">
+                <a href="/single-blog.html">
+                  <h5>رؤية المزيد</h5>
+                  <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 18L12 -5.24537e-07L3.93402e-07 9L12 18Z" fill="#8C8084" />
+                  </svg>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="new-btn">
+          <button>رؤية جميع الأخبار</button>
+        </div>
+      </div>
+
+  </section>
+  <footer class="text-white " dir="rtl">
+    <div class="container ">
+      <div class="footer-container">
+
+        <!-- العمود الأول: الشعار + مواقع التواصل -->
+        <div class="footer-column footer-logo text-md-end text-center">
+          <a href="#" class="logo-link"> <img src="./assets/images/Group.svg" alt="شعار الشركة" class="img-fluid mb-3"
+              style="max-width: 220px;" /></a>
+
+          <div class="social-icons">
+            <p class="fw-bold mb-2">مواقع التواصل</p>
+            <div class="d-flex justify-content-md-end justify-content-center gap-3">
+              <a href="#" class="text-white fs-5"><i class="fab fa-facebook-square"></i></a>
+              <a href="#" class="text-white fs-5"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white fs-5"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="text-white fs-5"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white fs-5"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- العمود الثاني: روابط + تواصل معنا -->
+        <div class="footer-column d-flex  gap-5 text-md-end text-center justify-content-md-around">
+          <!-- روابط تهمك -->
+          <div class="implinks">
+            <h5 class="fw-bold mb-4">روابط تهمك</h5>
+            <ul class="list-unstyled d-flex flex-column mb-0 gap-3">
+              <li><a href="./index.html" class="text-white text-decoration-none">الرئيسية</a></li>
+              <li><a href="./about.html" class="text-white text-decoration-none">من نحن</a></li>
+              <li><a href="./services.html" class="text-white text-decoration-none">الخدمات</a></li>
+              <li><a href="./projects.html" class="text-white text-decoration-none">المشاريع</a></li>
+              <li><a href="./clients.html" class="text-white text-decoration-none">عملاؤنا</a></li>
+              <li><a href="./blog.html" class="text-white text-decoration-none">المدونة</a></li>
+            </ul>
+          </div>
+
+          <!-- تواصل معنا -->
+          <div class="contacus">
+            <h5 class="fw-bold mb-4">تواصل معنا</h5>
+            <ul class="list-unstyled d-flex flex-column mb-0 gap-3">
+              <li><a href="./index.html" class="text-white text-decoration-none"> <i
+                    class="fas fa-map-marker-alt ms-2"></i> الرياض - المملكة العربية السعودية</a></li>
+              <li><a href="./about.html" class="text-white text-decoration-none"> <i class="fas fa-envelope ms-2"></i>
+                  info@gbcest.com </a></li>
+              <li><a href="./services.html" class="text-white text-decoration-none"><i class="fas fa-phone ms-2"></i>
+                  +966 50 360 2660</a></li>
+              <li><a href="./projects.html" class="text-white text-decoration-none"><i class="fas fa-phone ms-2"></i>
+                  +966 50 1944 522</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- الأسفل -->
+      <div
+        class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 text-white-50 small">
+        <p class="mb-2 mb-md-0">جميع الحقوق محفوظة لـ <span class="text-success">مؤسسة الجسر الأخضر للمقاولات</span></p>
+        <div class="d-flex align-items-center gap-2">
+          <span>صنع بكل حب من قبل</span>
+          <a href=""><img src="./assets/images/Frame.png" alt="pujux logo" style="height: 25px;" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- WhatsApp Button -->
+  <a href="https://api.whatsapp.com/send?phone=966555555555&text=مرحبا%20بمؤسسة%20الجسر%20الأخضر%20للمقاولات"
+    class="whats-button" target="_blank" rel="noopener noreferrer">
+    <svg class="whats-icon" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M16.4142 46.0546L18.0548 38.4374C15.9461 35.1115 15.1235 31.1304 15.7413 27.241C16.3591 23.3517 18.3749 19.8214 21.4104 17.3126C24.4459 14.8038 28.2926 13.4888 32.2287 13.6144C36.1648 13.74 39.9198 15.2976 42.7892 17.9948C45.6586 20.692 47.4452 24.3436 47.8138 28.2644C48.1824 32.1852 47.1077 36.1058 44.7912 39.2906C42.4748 42.4753 39.0759 44.7054 35.2321 45.5624C31.3884 46.4194 27.3641 45.8444 23.9142 43.9453L16.4142 46.0546Z"
+        fill="#2AA626" stroke="white" stroke-width="2" />
+      <path
+        d="M36.3613 32.4009C36.0625 32.1988 35.7636 32.0978 35.4648 32.5019L34.2694 34.1186C33.9706 34.3207 33.7714 34.4217 33.3729 34.2196C31.8788 33.4113 29.7869 32.5019 27.9939 29.4707C27.8943 29.0665 28.0935 28.8644 28.2927 28.6624L29.1892 27.2478C29.3884 27.0457 29.2888 26.8436 29.1892 26.6415L27.9939 23.7113C27.695 22.903 27.3962 23.004 27.0974 23.004H26.3005C26.1012 23.004 25.7028 23.1051 25.3043 23.5092C23.1129 25.7322 24.0094 28.8644 25.6032 30.8853C25.902 31.2894 27.8943 34.9269 32.1776 36.8467C35.3652 38.2613 36.0625 38.0592 36.959 37.8571C38.0547 37.7561 39.1504 36.8467 39.6485 35.9373C39.7481 35.6342 40.2462 34.3207 39.8477 34.1186"
+        fill="white" />
+    </svg>
+  </a>
+  <!--  WhatsApp Button -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
