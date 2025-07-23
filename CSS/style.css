@@ -602,7 +602,7 @@ section.ourteam {
 }
 
 .ourcoverage {
-   padding-top: 200px;
+    padding-top: 200px;
 }
 
 .ourcoverage .coverage-head {
@@ -1205,6 +1205,7 @@ button:hover {
 section.sec-stages-sec {
     padding-top: 100px;
 }
+
 .sec-stages-sec .back-link {
     display: flex;
     align-items: center;
@@ -1419,8 +1420,9 @@ section.project-header {
 .one-proj-row p {
     text-align: center;
 }
+
 .other-projects .other-proj-head {
-     padding-top: 200px !important;
+    padding-top: 200px !important;
     display: flex;
     justify-content: space-between;
 }
@@ -1500,6 +1502,7 @@ button.mobile-btn {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .home-hero-sec .conten-text {
     display: flex;
     flex-direction: column;
@@ -1515,16 +1518,18 @@ button.mobile-btn {
 }
 
 .home-hero-sec .conten-text h2 {
-    font-size: 95px;
+    font-size: 75px;
 }
 
 .home-hero-sec .conten-text h3 {
-    font-size: 44px;
+    font-size: 40px;
 }
 
 .home-hero-sec .conten-text p {
     font-weight: bold;
     color: gray;
+    font-size: 14px;
+            
 }
 
 .herosec-btn {
@@ -1612,9 +1617,11 @@ button.mobile-btn {
     height: 370px;
     object-fit: cover;
 }
+
 section.home-cont-work {
     padding-top: 200px;
 }
+
 .home-services .hserv-head {
     text-align: center;
 }
@@ -2089,16 +2096,19 @@ button {
         transform: translateY(-5px);
     }
 }
-.questionsSec  {
-        margin-top: 200px !important;
+
+.questionsSec {
+    margin-top: 200px !important;
 }
-.home-blog .new-bttn{
-    width: 200px ;
+
+.home-blog .new-bttn {
+    width: 200px;
     height: 48px;
     display: block;
-   margin: 30px auto;
+    margin: 30px auto;
 
 }
+
 .coverage-stats {
     position: absolute;
     bottom: 20px;
@@ -2410,6 +2420,14 @@ button {
     .dropdown-content {
         min-width: 133px;
     }
+
+    .home-hero-sec .conten-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        margin-top: -11px;
+    }
 }
 
 @media(max-width:1303px) {
@@ -2557,6 +2575,12 @@ button {
     .contact-form {
         padding-top: 40px;
     }
+
+    .home-hero-sec .conten-text p {
+        font-weight: bold;
+        color: #495057;
+        font-size: 9px;
+    }
 }
 
 @media (max-width:510px) {
@@ -2569,6 +2593,14 @@ button {
         font-size: 16px;
 
     }
+
+    .home-hero-sec .conten-text h2 {
+        font-size: 32px;
+    }
+
+    .home-hero-sec .conten-text h3 {
+        font-size: 18px;
+    }
 }
 
 @media (max-width:600px) {
@@ -2579,7 +2611,7 @@ button {
     .home-blog .home-blog-head h2 {
         font-size: 40px;
     }
-    
+
     .ques-head h2 {
         font-size: 35px !important;
     }
@@ -2611,12 +2643,24 @@ button {
     .stages-list li {
         margin-right: 20px;
     }
+
+    .herosec-btn {
+        padding: 7px 6px !important;
+    }
 }
 
 @media (max-width:489px) {
     .sec-stages-sec .title h3 {
         font-size: 18px;
     }
+
+    .home-hero-sec .conten-text p {
+        font-weight: 500;
+        color:#6c757d;
+        font-size: 9px;
+        max-width: 50%;
+    }
+    
 }
 
 @media(max-width:460px) {
@@ -2629,6 +2673,20 @@ button {
         font-size: 20px;
         font-weight: 500;
         width: 100%;
+    }
+
+    .home-hero-sec .conten-text h2 {
+        font-size: 24px;
+    }
+
+    .home-hero-sec .conten-text h3 {
+        font-size: 14px;
+    }
+
+    .herosec-btn {
+
+        padding: 3px 3px !important;
+
     }
 }
 
@@ -2656,11 +2714,24 @@ button {
     .service-item .right span {
         font-size: 65px;
     }
+
+    .home-hero-sec .conten-text h2 {
+        font-size: 20px;
+    }
+    .home-hero-sec {
+    width: 113%;
+     background-position: left; 
+   
+}
 }
 
 @media(max-width:410px) {
     .project-header .proj-area {
         margin-left: 130px;
+    }
+
+    .herosec-btn {
+        padding: 2px 3px !important;
     }
 }
 
@@ -2668,6 +2739,25 @@ button {
     .project-header .proj-area {
         margin-left: 98px;
     }
+
+}
+
+@media(max-width:375px) {
+    .home-hero-sec .conten-text h2 {
+        font-size: 18px;
+    }
+
+    .home-hero-sec .conten-text h3 {
+        font-size: 13px;
+    }
+    .home-hero-sec {
+    width: 117%;
+    background-position: left; 
+    
+}
+.herosec-btn{
+        font-size: 14px !important;
+}
 }
 
 @media (max-width:360px) {
@@ -2678,4 +2768,34 @@ button {
     .ourcoverage .coverage-head h2 {
         font-size: 40px !important;
     }
+
+    @media(max-width:320px) {
+        .home-hero-sec .conten-text h2 {
+            font-size: 16px;
+        }
+
+        .home-hero-sec .conten-text h3 {
+            font-size: 12px;
+        }
+       .home-hero-sec {
+            width: 120%;  
+            background-position: left;
+        }
+        .home-hero-sec .conten-text p {
+        font-weight: 500;
+        color:#6c757d;
+        font-size: 9px;
+    }
+    .herosec-btn{
+        margin: 59px 0;
+    font-weight: bold !important;
+    font-size: 12px !important;
+    }
+    }
+}
+
+.swiper_home .swiper-slide {
+    display: flex;
+    align-items: center;
+    height: auto;
 }
