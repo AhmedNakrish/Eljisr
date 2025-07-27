@@ -51,10 +51,11 @@
 
 
                 <div class="language-switch d-flex align-items-center ms-4 gap-3">
-                    <div class="lang-options d-flex gap-2">
-                        <a href="#">EN</a>
-                        <a href="#" class="active">عربي</a>
+                    <div class="lang-options d-flex gap-3 justify-content-center">
+                        <a href="#" class="lang-btn" data-lang="en">EN</a>
+                        <a href="#" class="lang-btn active" data-lang="ar">عربي</a>
                     </div>
+
                 </div>
                 <a href="#contactus" class="btn-contact btn ">تواصل معنا</a>
             </div>
@@ -82,9 +83,11 @@
             <hr>
             <div class="language-switch d-flex flex-column gap-2 mt-3">
                 <div class="lang-options d-flex gap-3 justify-content-center">
-                    <a href="#">EN</a>
-                    <a href="#" class="active">عربي</a>
+                    <a href="#" class="lang-btn" data-lang="en">EN</a>
+                    <a href="#" class="lang-btn active" data-lang="ar">عربي</a>
                 </div>
+
+
                 <a href="#contactus" class="btn-contact btn btn-outline-primary mt-2">تواصل معنا</a>
             </div>
         </div>
@@ -160,24 +163,25 @@
             </div>
         </div>
     </section>
-    <section class="ourwork-home  py-4">
+    <section class="ourwork-home py-4">
         <div class="container">
             <div class="row workvalues text-center">
                 <div class="col-md-4 col-sm-6 mb-3 values">
-                    <span>1.000.000+</span>
+                    <span class="counter" data-target="1000000">0</span>
                     <p>زرعنا أكثر من مليون زهرة</p>
                 </div>
                 <div class="col-md-4 col-sm-6 mb-3 values">
-                    <span>1.000+</span>
+                    <span class="counter" data-target="1000">0</span>
                     <p>أكملنا أكثر من ألف شجرة</p>
                 </div>
                 <div class="col-md-4 col-sm-12 mb-3 values">
-                    <span>90+</span>
+                    <span class="counter" data-target="90">0</span>
                     <p>لدينا أكثر من تسعين عميل سعيد</p>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="home-services">
         <div class="container">
             <div class="hserv-head">
@@ -298,7 +302,7 @@
             </div>
         </div>
     </section>
-    <section class="other-projects py-5">
+    <section class="other-projects  ">
 
         <div class="container position-relative">
             <!-- رأس القسم -->
@@ -319,122 +323,146 @@
 
                     <!-- Slide 1 -->
                     <div class="swiper-slide">
-                        <div class="proj-card">
-                            <img src="./assets/images/Image1.png" alt="">
-                            <div class="proj-card-body">
-                                <h5 class="card-title">قصر سكني</h5>
-                                <div class="end-proj-card">
-                                    <a href="./oneProject.html">
+                        <a href="./oneProject.html" class="project-card">
+                            <div class="proj-card">
+                                <div class="img-card-proj">
+                                    <div class="img-card-proj"><img src="./assets/images/Image1.png" alt=""></div>
+                                </div>
+                                <div class="proj-card-body">
+                                    <h5 class="card-title">قصر سكني</h5>
+                                    <div class="end-proj-card">
+
                                         <p>حى حطين</p>
                                         <svg width="16" height="24" viewBox="0 0 16 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M15.5 0.333415L15.5 23.6667L0.499999 12.0001L15.5 0.333415Z"
                                                 fill="#6D6E71" />
                                         </svg>
-                                    </a>
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <!-- Slide 2 -->
                     <div class="swiper-slide">
-                        <div class="proj-card">
-                            <img src="./assets/images/Image1.png" alt="">
-                            <div class="proj-card-body">
-                                <h5 class="card-title">قصر سكني</h5>
-                                <div class="end-proj-card">
-                                    <a href="./oneProject.html">
+                        <a href="./oneProject.html" class="project-card">
+                            <div class="proj-card">
+                                <div class="img-card-proj">
+                                    <div class="img-card-proj"><img src="./assets/images/Image1.png" alt=""></div>
+                                </div>
+                                <div class="proj-card-body">
+                                    <h5 class="card-title">قصر سكني</h5>
+                                    <div class="end-proj-card">
+
                                         <p>حى حطين</p>
                                         <svg width="16" height="24" viewBox="0 0 16 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M15.5 0.333415L15.5 23.6667L0.499999 12.0001L15.5 0.333415Z"
                                                 fill="#6D6E71" />
                                         </svg>
-                                    </a>
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <!-- Slide 3 -->
                     <div class="swiper-slide">
-                        <div class="proj-card">
-                            <img src="./assets/images/Image1.png" alt="">
-                            <div class="proj-card-body">
-                                <h5 class="card-title">قصر سكني</h5>
-                                <div class="end-proj-card">
-                                    <a href="./oneProject.html">
+                        <a href="./oneProject.html" class="project-card">
+                            <div class="proj-card">
+                                <div class="img-card-proj">
+                                    <div class="img-card-proj"><img src="./assets/images/Image1.png" alt=""></div>
+                                </div>
+                                <div class="proj-card-body">
+                                    <h5 class="card-title">قصر سكني</h5>
+                                    <div class="end-proj-card">
+
                                         <p>حى حطين</p>
                                         <svg width="16" height="24" viewBox="0 0 16 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M15.5 0.333415L15.5 23.6667L0.499999 12.0001L15.5 0.333415Z"
                                                 fill="#6D6E71" />
                                         </svg>
-                                    </a>
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <!-- Slide 1 -->
                     <div class="swiper-slide">
-                        <div class="proj-card">
-                            <img src="./assets/images/Image1.png" alt="">
-                            <div class="proj-card-body">
-                                <h5 class="card-title">قصر سكني</h5>
-                                <div class="end-proj-card">
-                                    <a href="./oneProject.html">
+                        <a href="./oneProject.html" class="project-card">
+                            <div class="proj-card">
+                                <div class="img-card-proj">
+                                    <div class="img-card-proj"><img src="./assets/images/Image1.png" alt=""></div>
+                                </div>
+                                <div class="proj-card-body">
+                                    <h5 class="card-title">قصر سكني</h5>
+                                    <div class="end-proj-card">
+
                                         <p>حى حطين</p>
                                         <svg width="16" height="24" viewBox="0 0 16 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M15.5 0.333415L15.5 23.6667L0.499999 12.0001L15.5 0.333415Z"
                                                 fill="#6D6E71" />
                                         </svg>
-                                    </a>
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <!-- Slide 2 -->
                     <div class="swiper-slide">
-                        <div class="proj-card">
-                            <img src="./assets/images/Image1.png" alt="">
-                            <div class="proj-card-body">
-                                <h5 class="card-title">قصر سكني</h5>
-                                <div class="end-proj-card">
-                                    <a href="./oneProject.html">
+                        <a href="./oneProject.html" class="project-card">
+                            <div class="proj-card">
+                                <div class="img-card-proj">
+                                    <div class="img-card-proj"><img src="./assets/images/Image1.png" alt=""></div>
+                                </div>
+                                <div class="proj-card-body">
+                                    <h5 class="card-title">قصر سكني</h5>
+                                    <div class="end-proj-card">
+
                                         <p>حى حطين</p>
                                         <svg width="16" height="24" viewBox="0 0 16 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M15.5 0.333415L15.5 23.6667L0.499999 12.0001L15.5 0.333415Z"
                                                 fill="#6D6E71" />
                                         </svg>
-                                    </a>
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <!-- Slide 3 -->
                     <div class="swiper-slide">
-                        <div class="proj-card">
-                            <img src="./assets/images/Image1.png" alt="">
-                            <div class="proj-card-body">
-                                <h5 class="card-title">قصر سكني</h5>
-                                <div class="end-proj-card">
-                                    <a href="./oneProject.html">
+                        <a href="./oneProject.html" class="project-card">
+                            <div class="proj-card">
+                                <div class="img-card-proj">
+                                    <div class="img-card-proj"><img src="./assets/images/Image1.png" alt=""></div>
+                                </div>
+                                <div class="proj-card-body">
+                                    <h5 class="card-title">قصر سكني</h5>
+                                    <div class="end-proj-card">
+
                                         <p>حى حطين</p>
                                         <svg width="16" height="24" viewBox="0 0 16 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M15.5 0.333415L15.5 23.6667L0.499999 12.0001L15.5 0.333415Z"
                                                 fill="#6D6E71" />
                                         </svg>
-                                    </a>
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
@@ -468,7 +496,8 @@
             <div class="content">
                 <h2>نمو عمراني يليق برؤية 2030، ننفذه بخبرة محلية.</h2>
                 <p>من التنسيق الحضري إلى تنفيذ المشاريع السكنية نضمن الجودة الإنشائية، والحلول المستدامة في كل خطوة.</p>
-                <button class="start-tbn btn  mt-3" onclick="window.location.href='contactus.html'">ابدأ مشروعك الآن</button>
+                <button class="start-tbn btn  mt-3" onclick="window.location.href='contactus.html'">ابدأ مشروعك
+                    الآن</button>
             </div>
         </div>
     </section>
@@ -480,70 +509,72 @@
                     <h2>المدونة</h2>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="./assets/images/Image Container (1).png" alt="">
+                    <a href="/single-blog.html" class="blog-card">
+                        <div class="img-blog-card"><img src="./assets/images/Image Container (1).png" alt=""></div>
                         <div class="card-body">
                             <p class="card-date">1 مايو 2025</p>
                             <h3 class="card-title">إضافة ميزة "طلب خدمة" أصبحت متاحة الآن</h3>
                             <p>يمكن للعملاء الآن نشر طلباتهم مباشرة من ملفهم الشخصي لتلقّي عروض من وكالات متخصصة خلال
                                 دقائق.</p>
                             <div class="end-card">
-                                <a href="/single-blog.html">
+                                <div class="more" href="/single-blog.html">
                                     <h5>رؤية المزيد</h5>
                                     <svg width="12" height="18" viewBox="0 0 12 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12 18L12 -5.24537e-07L3.93402e-07 9L12 18Z" fill="#8C8084" />
                                     </svg>
-                                </a>
+                                </div>
 
                             </div>
                         </div>
-                    </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="/single-blog.html" class="blog-card">
+                        <div class="img-blog-card"><img src="./assets/images/Image Container (1).png" alt=""></div>
+                        <div class="card-body">
+                            <p class="card-date">1 مايو 2025</p>
+                            <h3 class="card-title">إضافة ميزة "طلب خدمة" أصبحت متاحة الآن</h3>
+                            <p>يمكن للعملاء الآن نشر طلباتهم مباشرة من ملفهم الشخصي لتلقّي عروض من وكالات متخصصة خلال
+                                دقائق.</p>
+                            <div class="end-card">
+                                <div class="more" href="/single-blog.html">
+                                    <h5>رؤية المزيد</h5>
+                                    <svg width="12" height="18" viewBox="0 0 12 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 18L12 -5.24537e-07L3.93402e-07 9L12 18Z" fill="#8C8084" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="./assets/images/Image Container (1).png" alt="">
+                    <a href="/single-blog.html" class="blog-card">
+                        <div class="img-blog-card"><img src="./assets/images/Image Container (1).png" alt=""></div>
                         <div class="card-body">
                             <p class="card-date">1 مايو 2025</p>
                             <h3 class="card-title">إضافة ميزة "طلب خدمة" أصبحت متاحة الآن</h3>
                             <p>يمكن للعملاء الآن نشر طلباتهم مباشرة من ملفهم الشخصي لتلقّي عروض من وكالات متخصصة خلال
                                 دقائق.</p>
                             <div class="end-card">
-                                <a href="/single-blog.html">
+                                <div class="more" href="/single-blog.html">
                                     <h5>رؤية المزيد</h5>
                                     <svg width="12" height="18" viewBox="0 0 12 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12 18L12 -5.24537e-07L3.93402e-07 9L12 18Z" fill="#8C8084" />
                                     </svg>
-                                </a>
+                                </div>
 
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="./assets/images/Image Container (1).png" alt="">
-                        <div class="card-body">
-                            <p class="card-date">1 مايو 2025</p>
-                            <h3 class="card-title">إضافة ميزة "طلب خدمة" أصبحت متاحة الآن</h3>
-                            <p>يمكن للعملاء الآن نشر طلباتهم مباشرة من ملفهم الشخصي لتلقّي عروض من وكالات متخصصة خلال
-                                دقائق.</p>
-                            <div class="end-card">
-                                <a href="/single-blog.html">
-                                    <h5>رؤية المزيد</h5>
-                                    <svg width="12" height="18" viewBox="0 0 12 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 18L12 -5.24537e-07L3.93402e-07 9L12 18Z" fill="#8C8084" />
-                                    </svg>
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <button class="new-bttn" onclick="window.location.href='blog.html'">رؤية جميع الأخبار</button>
+        </div>
         </div>
     </section>
     <section class="questionsSec">
@@ -634,14 +665,14 @@
 
                     <img src="./assets/images/Grouplogo.png" alt="" class="img-fluid" />
                     <div class="contacts">
-                        <p>
+                        <a href="#">
                             <i class="fas fa-map-marker-alt"></i> الرياض، المملكة
                             العربية السعودية
-                        </p>
-                        <p><i class="fas fa-envelope"></i> info@gbcest.com</p>
+                        </a>
+                        <a href="#"><i class="fas fa-envelope"></i> info@gbcest.com</a>
                         <div class="num">
-                            <p><i class="fas fa-phone"></i> +966 50 360 2660</p>
-                            <p><i class="fas fa-phone"></i>+966 50 1944 522</p>
+                            <a href="#"><i class="fas fa-phone"></i> <span>+966 50 360 2660</span></a>
+                            <a href="#"><i class="fas fa-phone"></i> <span>+966 50 1944 522</span> </a>
                         </div>
 
                     </div>
@@ -759,12 +790,12 @@
 
             <!-- الأسفل -->
             <div
-                class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 text-white-50 small">
+                class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center  text-white-50 small">
                 <p class="mb-2 mb-md-0">جميع الحقوق محفوظة لـ <span class="text-success">مؤسسة الجسر الأخضر
                         للمقاولات</span></p>
                 <div class="d-flex align-items-center gap-2">
                     <span>صنع بكل حب من قبل</span>
-                    <a href=""><img src="./assets/images/Frame.png" alt="pujux logo" style="height: 25px;" /></a>
+                    <a href=""><img src="./assets/images/puiux.svg" alt="pujux logo" style="height: 25px;" /></a>
                 </div>
             </div>
         </div>
