@@ -320,7 +320,11 @@ button.close-btn:hover {
     color: var(--secondry-color);
     margin-bottom: 10px;
 }
-
+button.btn.burger-btn  ,button.close-btn {
+    background: #8b0033;
+    color: #fff;
+    border-radius: 8px !important;
+}
 .content p {
     padding-top: 20px;
     position: relative;
@@ -547,9 +551,9 @@ button.close-btn:hover {
 
 .team-member img {
     width: 100%;
-    height: auto;
+    height: 530px;
     filter: grayscale(1);
-
+    object-fit: cover;
 }
 
 .imgcard {
@@ -926,10 +930,7 @@ section.News {
      margin: 70px 0;
 }
 
-.headd h1 {
-    color: var(--fourth-color);
-}
-
+ 
 /*.proj {
     padding-top: 100px;
 }*/
@@ -1022,11 +1023,18 @@ section.News {
 .headd {
     text-align: center;
 }
-
+.error-message {
+      color: red;
+      font-size: 0.9em;
+      display: block;
+      margin-top: 5px;
+      direction: rtl;
+    }
+    
 .headd h1 {
-    color: #1A0009;
     font-weight: bold;
-    padding-top: 12px;
+    padding-top: 24px;
+    color: var(--fourth-color);
 }
 
 .location-map iframe {
@@ -1504,9 +1512,9 @@ button.mobile-btn {
 /*Home page*/
 .home-hero-sec {
     width: 100%;
-    background-image: url(../assets/images/HERO.png);
+    background-image: url(../assets/images/heroback.png);
     object-fit: cover;
-    padding: 100px;
+    /*padding: 100px;*/
     font-family: "Tajawal";
     background-position: center;
     background-size: cover;
@@ -1557,7 +1565,7 @@ button.mobile-btn {
 
 .home-hero-sec .hero-sec-img img {
     width: 100%;
-    height: 550px;
+    height:424px;
     margin-top: 55px;
     object-fit: contain;
 }
@@ -2207,9 +2215,9 @@ button {
     nav.custom-navbar {
     padding: 13px 30px;
 }
-.home-hero-sec{
+/*.home-hero-sec{
     padding: 20px;
-}
+}*/
 }
 
 @media (max-width:999px) {
@@ -2369,7 +2377,12 @@ button {
     footer {
         display: list-item;
     }
-
+.service-item {
+        padding:  30px  ;
+}
+.service-item .right span {
+    font-size: 49px;
+}
     button.mobile-btn {
         display: block;
         width: fit-content;
@@ -2412,7 +2425,7 @@ button {
         padding: 0 20px;
     }
 
-    .home-hero-sec .hero-sec-img img {
+.home-hero-sec .hero-sec-img img {
         width: 100%;
         height: 400px;
         margin-top: 55px;
@@ -2459,54 +2472,13 @@ button {
     .home-hero-sec .conten-text {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         gap: 5px;
-        margin-top: -11px;
     }
-}
-
-@media(max-width:1303px) {
-    .eng-sec {
-        margin-right: 97px;
+    .herosec-btn{
+        margin: 30px 0;
     }
-
-    .eng-sec {
-        margin-right: 29px !important;
-    }
-}
-
-@media(max-width:571px) {
-    footer {
-        display: list-item;
-    }
-
-    .questionsSec .accordion-icon svg {
-        width: 16px;
-        height: 16px;
-    }
-
-    .home-cont-work h2 {
-        font-size: 31px;
-    }
-
-    .home-cont-work h5 {
-        font-size: 18px;
-    }
-
-    .whats-button {
-        width: 60px;
-        height: 60px;
-    }
-
-    .clients-logos img {
-        width: 70px;
-        object-fit: contain;
-    }
-
-}
-
-@media (max-width:767px) {
-    footer .footer-container {
+   
+     footer .footer-container {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -2514,7 +2486,6 @@ button {
         text-align: right;
         gap: 2rem;
     }
-
     section.sec-stages-sec .eng-sec {
         margin-right: 0 !important;
     }
@@ -2614,15 +2585,63 @@ button {
     .home-hero-sec .conten-text p {
         font-weight: bold;
         color: #495057;
-        font-size: 9px;
+        font-size: 12px;
     }
+    nav.custom-navbar {
+        padding: 13px 0px;
+    }
+}
+
+@media(max-width:1303px) {
+    .eng-sec {
+        margin-right: 97px;
+    }
+
+    .eng-sec {
+        margin-right: 29px !important;
+    }
+}
+
+@media(max-width:571px) {
+    footer {
+        display: list-item;
+    }
+.team-member img {
+    height: 430px;
+}
+    .questionsSec .accordion-icon svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .home-cont-work h2 {
+        font-size: 31px;
+    }
+
+    .home-cont-work h5 {
+        font-size: 18px;
+    }
+
+    .whats-button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .clients-logos img {
+        width: 70px;
+        object-fit: contain;
+    }
+
 }
 
 @media (max-width:510px) {
     section.sec-stages-sec .eng-sec {
         margin-right: 0 !important;
     }
-
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+}
     .intro-para p {
         text-align: right;
         font-size: 16px;
@@ -2636,6 +2655,7 @@ button {
     .home-hero-sec .conten-text h3 {
         font-size: 18px;
     }
+
 }
 
 @media (max-width:600px) {
@@ -2679,11 +2699,15 @@ button {
         margin-right: 20px;
     }
 
-    .herosec-btn {
+   /* .herosec-btn {
         padding: 7px 6px !important;
-    }
+    }*/
 }
-
+@media(max-width:540px){
+   /* .home-hero-sec {
+        padding: 6px;
+    }*/
+}
 @media (max-width:489px) {
     .sec-stages-sec .title h3 {
         font-size: 18px;
@@ -2692,7 +2716,7 @@ button {
     .home-hero-sec .conten-text p {
         font-weight: 500;
         color:#6c757d;
-        font-size: 9px;
+        font-size: 12px;
         max-width: 50%;
     }
     
@@ -2718,11 +2742,11 @@ button {
         font-size: 14px;
     }
 
-    .herosec-btn {
+    /*.herosec-btn {
 
         padding: 3px 3px !important;
 
-    }
+    }*/
 }
 
 @media (max-width:430px) {
@@ -2753,11 +2777,11 @@ button {
     .home-hero-sec .conten-text h2 {
         font-size: 20px;
     }
-    .home-hero-sec {
+    /*.home-hero-sec {
     width: 113%;
      background-position: left; 
    
-}
+}*/
 }
 
 @media(max-width:410px) {
@@ -2766,8 +2790,11 @@ button {
     }
 
     .herosec-btn {
-        padding: 2px 3px !important;
+        padding: 12px 40px !important;
     }
+    /*.home-hero-sec {
+        padding: 10px;
+    }*/
 }
 
 @media(max-width:380px) {
@@ -2785,11 +2812,11 @@ button {
     .home-hero-sec .conten-text h3 {
         font-size: 13px;
     }
-    .home-hero-sec {
-    width: 117%;
+  /*  .home-hero-sec {
+   width: 117%;
     background-position: left; 
     
-}
+}*/
 .herosec-btn{
         font-size: 14px !important;
 }
@@ -2806,11 +2833,11 @@ button {
 
     @media(max-width:320px) {
         .home-hero-sec .conten-text h2 {
-            font-size: 16px;
+            font-size: 20px;
         }
 
         .home-hero-sec .conten-text h3 {
-            font-size: 12px;
+            font-size: 16px;
         }
        .home-hero-sec {
             width: 120%;  
@@ -2819,13 +2846,14 @@ button {
         .home-hero-sec .conten-text p {
         font-weight: 500;
         color:#6c757d;
-        font-size: 9px;
+        font-size: 11px;
     }
     .herosec-btn{
-        margin: 59px 0;
+        /*margin: 59px 0;*/
     font-weight: bold !important;
     font-size: 12px !important;
     }
+     
     }
 }
 @media (max-width: 1100px)    {

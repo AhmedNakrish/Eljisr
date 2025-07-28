@@ -20,7 +20,7 @@
   <nav class="custom-navbar">
     <div class="custom-container container d-flex justify-content-between align-items-center">
       <!-- الشعار -->
-      <a class="custom-brand navbar-brand" href="#">
+      <a class="custom-brand navbar-brand" href="./index.html">
         <img src="./assets/images/LOGO.svg" alt="logo" />
       </a>
 
@@ -141,20 +141,23 @@
         </div>
         <div class="col-md-6">
           <div class="contact-form">
-            <form>
+            <form id="contactForm">
               <div class="form-group">
-                <input type="text" id="name" placeholder=" " required />
+                <input type="text" id="name" placeholder=" " />
                 <label for="name">الاسم بالكامل</label>
+                <span class="error-message" id="nameError"></span>
               </div>
 
               <div class="form-group">
-                <input type="tel" id="phone" placeholder=" " required />
+                <input type="tel" id="phone" placeholder=" " />
                 <label for="phone">رقم الهاتف</label>
+                <span class="error-message" id="phoneError"></span>
               </div>
 
               <div class="form-group">
-                <textarea id="message" rows="5" placeholder=" " required></textarea>
+                <textarea id="message" rows="5" placeholder=" "></textarea>
                 <label for="message">رسالتك</label>
+                <span class="error-message" id="messageError"></span>
               </div>
 
               <button type="submit">إرسال</button>
@@ -164,6 +167,7 @@
       </div>
     </div>
   </section>
+
   <footer class="text-white " dir="rtl">
     <div class="container ">
       <div class="footer-container">
@@ -245,9 +249,13 @@
     </svg>
   </a>
   <!--  WhatsApp Button -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./JS/index.js"></script>
 </body>
 
 </html>
