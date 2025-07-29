@@ -1,39 +1,42 @@
-const counters = document.querySelectorAll(".counter");
+ const counters = document.querySelectorAll(".counter");
 
-const options = {
-  threshold: 0.5,
-};
-
-const runCounter = (counter) => {
-  const target = +counter.getAttribute("data-target");
-  let count = 0;
-  const speed = target / 200; // تعديل السرعة حسب الحاجة
-
-  const updateCount = () => {
-    count += speed;
-    if (count < target) {
-      counter.textContent = Math.ceil(count).toLocaleString();
-      requestAnimationFrame(updateCount);
-    } else {
-      counter.textContent = target.toLocaleString();
-    }
+  const options = {
+    threshold: 0.5, // نصف العنصر يجب أن يكون ظاهر لبدء العد
   };
 
-  updateCount();
-};
+  const runCounter = (counter) => {
+    const target = +counter.getAttribute("data-target");
+    let count = 0;
+    const speed = target / 200; // يمكنك تعديل هذا الرقم لتغيير السرعة
 
-const observer = new IntersectionObserver((entries, obs) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      runCounter(entry.target);
-      obs.unobserve(entry.target); // يشغل العداد مرة واحدة فقط
-    }
+    const updateCount = () => {
+      count += speed;
+      if (count < target) {
+        counter.textContent = Math.ceil(count).toLocaleString();
+        requestAnimationFrame(updateCount);
+      } else {
+        counter.textContent = target.toLocaleString();
+      }
+    };
+
+    updateCount();
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const counter = entry.target;
+        runCounter(counter);
+        observer.unobserve(counter); // عدم إعادة العد عند التمرير مرة أخرى
+      }
+    });
+  }, options);
+
+  counters.forEach((counter) => {
+    observer.observe(counter);
   });
-}, options);
 
-counters.forEach((counter) => {
-  observer.observe(counter);
-});
+  
 
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
@@ -70,7 +73,7 @@ const swiper_proj = new Swiper(".mySwiper_proj", {
   },
 });
 
-// JavaScript
+
 const swiper_home = new Swiper(".mySwiper_home", {
   loop: true,
   slidesPerView: 1,
